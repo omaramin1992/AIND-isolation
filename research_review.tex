@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+\title{A review of AlphaGo Paper}
+\author{Omar Ghaleb}
+\date{}
+\maketitle
+\subsection*{Paper Goals:}
+The main goal of this this paper was to introduce a way to design an AI agent that can defeat players in the game of Go. The game is considered one of the most challenging game for Artificial Intelligence. In the paper, they introduce a new approach that uses "value networks" to evaluate board positions and "policy networks" to select moves. These deep neural networks were trained by combination of supervised learning from human expert games, and reinforcement learning from games of self-play.
+
+\subsection*{Techniques introduced:}
+They introduced a new searching algorithm that does not require any lookahead and depends on two principles:
+\begin{itemize}
+  \item Neural Networks: Used to decides which moves to evaluate and which to play and assigns a value to each one.
+  \item Monte Carlo Tree search Algorithm: uses the neural networks in order to evaluate the game position in the search tree and to know which good moves.
+\end{itemize}
+
+\subsection*{Results:}
+\begin{itemize}
+  \item The AlphaGo was able to win 494/495 games (99.8\%) against other Go programs.
+  \item The distributed won 77\% against the single computer.
+  \item Both single and distributed versions are stronger than any other Go programs known before that
+  \item The performance of the AlphaGo can be better by providing better hardware 
+\end{itemize}
+\end{document}
